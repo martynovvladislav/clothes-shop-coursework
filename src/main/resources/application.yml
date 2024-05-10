@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: clothes_shop
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/clothes_shop}
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+server:
+  port: 8080
+
+security:
+  jwt:
+    token:
+      secret-key: ${SECRET_JWT_KEY:FMbkLtnLlSkiyKRrmCJZB5ym2gb8zlpDqeb2I2x5MA+5uszHswXRsVhgCUmXxdPnRuCLXSWh88BGN10kWZPt5jKYsfTxxwav57bnCZDvsxunK7MWgS1ot5Swh1+sI4qjNhit+VbrQRzt4O1Mu0fYEUZvM1xlHKlvM8e1ntdppMxECtGX/k7UcWyKQG6TJpIxLvpEM/fcO07J2JAnJWLdRhDQvupxGvEhyOXffkrqD3YlTu5VGobGspdPlNHEcN3jg/bCBGEL27f0SS/cxnwCV4jYva2qVINk5JOl4MrtLV1VFziTlomWguGw9/rjrCP7nqA/qVFzEaa6kNgBGUGpqg}
